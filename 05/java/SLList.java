@@ -6,7 +6,6 @@ class SLList {
 	first = f;
 	rest = r;
     }
-
     public static final SLList NIL = new SLList(0, null);
 
     public Object first() {
@@ -23,19 +22,15 @@ class SLList {
     }
 
     public Object nth(int i) {
-	Object hi = i;
-        return hi;
+	first = i;
+        return first;
     }
     public SLList nthRest(int i) {
         return rest;
     }
   
     public int length() {
-       if(NIL == null) {
-		return 1;
-	} else  {
-	return 0;
-	}
+        return -1;
     }
 
     public SLList remove(Object o) {
